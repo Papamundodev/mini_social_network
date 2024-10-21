@@ -1,0 +1,78 @@
+:root{
+    --primary-color: #e0e0e0;
+    --secondary-color: #bebebe;
+    --black-color: #333;
+    --shadow: 6px 6px 12px var(--secondary-color),
+    -6px -6px 12px #ffffff;
+}
+/* Style général pour le corps */
+body {
+    background-color: var(--primary-color);
+    color: var(--black-color);
+}
+a{
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+/* Style pour les boutons */
+.button {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 1em;
+    padding: 1em 2em;
+    box-shadow:  var(--shadow);
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+/*
+Navigation/content functionality
+ */
+/* Active link styling */
+nav a.active {
+    background-color: var(--black-color);
+    color: white;
+}
+
+/* Content sections */
+.content {
+    display: none;
+    margin-top: 20px;
+}
+
+/* Display the active content */
+.content.active {
+    display: block;
+}
+
+
+/*
+Navigation
+*/
+
+nav{
+    background-color: var(--primary-color);
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow:  var(--shadow);
+}
+nav input[type="text"] {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 1em;
+    padding: 1em;
+    box-shadow:  var(--shadow);
+}
+nav {
+    display: flex;
+    gap: 1em;
+    list-style-type: none;
+    margin-block-start: 0;
+    padding-inline-start: 1em;
+}
+
+nav input{
+    margin-left: auto;
+}
+
